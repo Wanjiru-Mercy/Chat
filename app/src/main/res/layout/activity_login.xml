@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context="com.braxton.chat.Login">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#fff"
+            android:textColor="#fff">
+
+        <EditText
+            android:id="@+id/logEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:layout_margin="30dp"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:drawablePadding="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#fff"
+            android:textColor="#fff">
+
+            <EditText
+                android:id="@+id/logPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:layout_margin="30dp"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:drawableStart="@drawable/ic_action_pass"
+                android:drawablePadding="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/sign_in_button_background"
+            android:text="Sign In"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/sign_up_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="25dp"
+            android:textColor="#1017ea"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Sign Up Here"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

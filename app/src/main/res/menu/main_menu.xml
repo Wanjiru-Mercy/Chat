@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item
+            android:id="@+id/friend_profile"
+            android:title="Profile"/>
+
+    </group>
+    <item
+        android:id="@+id/call_user"
+        android:title="Call"
+        android:icon="@drawable/ic_action_phone"
+        app:showAsAction="always"/>
+
+</menu>

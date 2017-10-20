@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.braxton.chat.NewUser">
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="User"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please fill in the details below"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_action_user_black"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Profile picture(Optional)"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/newUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_action_user_black"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/newPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_action_phone"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/newAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_action_address"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/save_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Details"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:background="#2115a4"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

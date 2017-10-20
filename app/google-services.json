@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "944912826267",
+    "firebase_url": "https://chat-8e52e.firebaseio.com",
+    "project_id": "chat-8e52e",
+    "storage_bucket": "chat-8e52e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944912826267:android:6122cea2f4d3b903",
+        "android_client_info": {
+          "package_name": "com.braxton.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944912826267-j3rhhkmiaruhjqne2gliof9oe3aatn16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF5BPYrbzOV81aSbWXRivI5RQTOPLsetI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
